@@ -1,0 +1,27 @@
+/* nav.css */
+header {
+    display: flex;
+    flex-direction: column; /* Display children in a column */
+    align-items: center; /* Center children horizontally */
+    background: url("../img/bg-login.png");
+    width: 300px;
+    height: auto;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0; /* Remove default padding */
+}
+
+.kiri li a {
+    color: aliceblue;
+    text-decoration: none; /* Remove underline from links */
+}
+
+.nav-kiri {
+    margin-top: 20px; /* Add some top margin for spacing */
+}

@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap");
+
+* {
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+}
+
+body {
+    background: url("../img/bg-login.png");
+}
+
+.judul-login {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 72px;
+    background: none;
+}
+
+.judul-login img {
+    width: 5%;
+    height: 5%;
+}
+
+.judul-login h1 {
+    font-size: 20px;
+    margin-left: 12px;
+}
+
+.container {
+    padding-inline: 40px;
+    display: flex;
+    margin-top: 36px; /* Retain the top margin */
+    justify-content: center;
+    max-width: fit-content; /* Adjust the width as needed */
+    height: auto;
+    border-radius: 20px;
+    background: rgba(58, 58, 58, 0.2);
+    margin: 36px auto 0; /* Center the container horizontally */
+}
+
+.m-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Add padding for spacing */
+    /* Other styles as needed */
+}
+
+.m-login h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.m-login h3 {
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+input {
+    border-radius: 10px;
+    border: 3px solid var(--merah, #600e00);
+    width: 240px;
+    height: 36px;
+    margin-bottom: 12px;
+}
+.input-nip {
+    background-color: transparent;
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    background-position: 12px center; /* Adjust the position of the image */
+    background-size: 20px;
+    background-image: url("../img/profile-line.png");
+}
+
+.input-pass {
+    background-color: transparent;
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    background-position: 12px center; /* Adjust the position of the image */
+    background-size: 20px;
+    background-image: url("../img/login-password.png");
+}
+
+.login-msk {
+    background-color: #600e00;
+    width: 288px;
+}
