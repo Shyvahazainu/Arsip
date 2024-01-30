@@ -1,0 +1,103 @@
+.container-pydk {
+    /* Set the desired width */
+    margin-left: 212px;
+    padding-top: 48px;
+    padding-right: 12px;
+    min-height: 100%;
+}
+
+td {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+table th,
+td,
+tr {
+    text-align: center;
+    padding: 20px;
+}
+
+table tr:nth-child(even) {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+th {
+    font-size: 14px;
+    background: #600e00;
+    color: #fff;
+    max-width: 240px;
+    text-align: center;
+}
+
+.pagination {
+    margin: 0;
+}
+
+.pagination:hover {
+    cursor: pointer;
+}
+
+.header_wrap {
+    padding: 10px 0;
+}
+.num_rows {
+    width: 20%;
+    float: left;
+}
+.tb_search {
+    margin-bottom: 12px;
+    width: 20%;
+    float: right;
+    position: relative;
+}
+
+.rows_count {
+    width: 20%;
+    float: right;
+    text-align: right;
+    color: #999;
+}
+
+.form-group {
+    position: absolute;
+    width: 240px;
+}
+
+/* Pagination links */
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pagination li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.pagination a {
+    display: block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    color: #333;
+    text-decoration: none;
+}
+
+.pagination a:hover {
+    background-color: #ddd;
+}
+
+.pagination .active a {
+    background-color: #600e00;
+    color: white;
+}
+
+.pagination-info {
+    font-size: 14px;
+    color: #666;
+}

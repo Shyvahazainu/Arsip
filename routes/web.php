@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\DataController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,10 +23,7 @@ Route::post('actionlogin', [LoginController::class, 'actionlogin'])->name('actio
 Route::get('home', [HomeController::class, 'index'])->name('home')->middleware('auth');
 Route::get('actionlogout', [LoginController::class, 'actionlogout'])->name('actionlogout')->middleware('auth');
 
-Route::get('admin', [HomeController::class, 'home_admin'])
-    ->middleware('ceklevel:Admin')
-    ->name('admin');
 
-Route::get('user', [HomeController::class, 'home_user'])
-    ->middleware('ceklevel:User')
-    ->name('user');
+Route::get('/penyidikan', [DataController::class, 'showDataPenyidikan'])->name('show.data.penyidikan');
+
+Route::get('/penuntutan', [DataController::class, 'showDataPenuntutan'])->name('show.data.penuntutan');

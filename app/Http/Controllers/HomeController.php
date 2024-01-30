@@ -13,21 +13,23 @@ class HomeController extends Controller
 {
     public function index()
     {
+        $jk = DB::table('users')->get('gender');
+        $total_cases = DB::table('data_arsip')->distinct()->count('perkara');
+        $total_file = DB::table('data_arsip')->count('kode');
+        $total_locus = DB::table('data_arsip')->distinct()->count('locus');
+        $total_dik = DB::table('data_arsip')->distinct()->pluck('rak')->toArray();
 
-        return view('home');
-    }
+        $total_locus_values = DB::table('data_arsip')->distinct();
 
-    public function home_admin()
-    {
-        $total_cases = DB::table('data_arsip')->count('perkara');
-        return view('home/home-admin', ['total_cases' => $total_cases]); // Pass the variable to the view
+        return view('home/home', [
+            'total_file' => $total_file, 
+            'jk' => $jk, 
+            'total_cases' => $total_cases,
+            'total_locus' => $total_locus,
+            'total_locus_values' => $total_locus_values,
+            'total_dik' => $total_dik
+        ]); // Pass the variable to the view
         
-    }
-
-    public function home_user()
-    {
-        $total_cases = DB::table('data_arsip')->count('perkara');
-        return view('home/home-user', ['total_cases' => $total_cases]);
     }
 
     

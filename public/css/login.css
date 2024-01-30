@@ -2,11 +2,11 @@
 
 * {
     font-family: "Montserrat", sans-serif;
-    color: #fff;
 }
 
 body {
     background: url("../img/bg-login.png");
+    color: #fff;
 }
 
 .judul-login {
@@ -74,6 +74,7 @@ input {
     width: 240px;
     height: 36px;
     margin-bottom: 12px;
+    color: white;
 }
 .input-nip {
     background-color: transparent;
@@ -96,4 +97,30 @@ input {
 .login-msk {
     background-color: #600e00;
     width: 288px;
+    cursor: pointer;
+}
+
+.error-lgn {
+    margin-bottom: 12px;
+}
+
+.pass {
+    position: relative;
+    width: 100%; /* Set the width of the container */
+    max-width: 300px; /* Set the maximum width if needed */
+}
+
+#password {
+    width: 100%;
+    box-sizing: border-box; /* Ensure the padding and border are included in the total width */
+}
+
+#toggler {
+    cursor: pointer;
+    position: absolute;
+    right: 12px; /* Adjust the right offset as needed */
+    top: 10px;
+    transform: translateY(-50%);
+    transform: scale(95%);
+    z-index: 1; /* Ensure the icon is on top of the input */
 }

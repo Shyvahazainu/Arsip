@@ -1,0 +1,99 @@
+footer {
+    min-height: 50px;
+    display: flex;
+    background: url("../img/bg-login.png");
+    padding: 12px 48px 36px 48px;
+}
+
+.bidang {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.web {
+    color: #e0e0e0;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 121.429%;
+    letter-spacing: 0.42px;
+}
+
+.map {
+    width: 296px;
+    height: 116px;
+    border-radius: 16px;
+}
+
+.link {
+    margin-top: 16px;
+    display: table-column;
+    margin-left: 172px;
+}
+
+.link p {
+    color: #fff;
+}
+
+.link a {
+    display: flex;
+    margin-bottom: -8px;
+    color: #e0e0e0;
+    font-weight: 100;
+    font-size: 14px;
+}
+/* footer {
+    top: 100%;
+    background: #600e00;
+    width: fit-content;
+    position: absolute;
+    padding: 24px;
+    display: block;
+    position: fi;
+    min-height: fit-content;
+    width: 100%;
+}
+
+.bidang {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.web {
+    color: #e0e0e0;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 121.429%; /* 17px */
+/* letter-spacing: 0.42px;
+} */
+
+/* .map {
+    width: 278px;
+    height: 86px;
+    border-radius: 16px;
+}
+
+.link {
+    margin-top: 16px;
+    margin-left: 172px;
+}
+
+.link p {
+    color: #fff;
+}
+
+.link a {
+    color: #e0e0e0;
+    font-weight: 100;
+    font- */

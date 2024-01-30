@@ -1,27 +1,111 @@
 /* nav.css */
-header {
+
+.hdr-container {
     display: flex;
-    flex-direction: column; /* Display children in a column */
-    align-items: center; /* Center children horizontally */
-    background: url("../img/bg-login.png");
-    width: 300px;
-    height: auto;
+    position: absolute;
+    flex-direction: column;
 }
 
-li {
+header {
+    padding-top: 24px;
+    padding-left: 12px; /* Center children horizontally */
+    background: url("../img/bg-login.png");
+    width: 196px;
+    height: fit-content;
+    font-weight: 700;
+    border-radius: 0 0 16px 0;
+}
+
+/* nav.css */
+.nav-hidden {
+    display: none;
+}
+
+ul li {
     list-style: none;
+    margin-top: 24px;
+}
+
+ul li a img {
+    margin-right: 8px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 ul {
     list-style: none;
-    padding: 0; /* Remove default padding */
+    padding: 0;
+    margin-bottom: 36px; /* Remove default padding */
 }
 
-.kiri li a {
-    color: aliceblue;
-    text-decoration: none; /* Remove underline from links */
+ul li a {
+    margin-left: 4px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    /* Remove underline from links */
 }
 
-.nav-kiri {
-    margin-top: 20px; /* Add some top margin for spacing */
+ul li a:hover {
+    color: #fff;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+ul li a.active {
+    color: #fff;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.logo-container {
+    display: flex;
+    width: inherit;
+    padding: auto;
+    margin-bottom: 24px;
+    justify-content: center;
+    margin-left: -12px;
+}
+
+.logo-container img {
+    width: 64px;
+}
+
+.tambah-data {
+    font-weight: 700;
+    display: flex;
+    position: relative;
+    border-radius: 16px;
+    width: 154px;
+    height: fit-content;
+    background-color: #fff;
+    margin-bottom: 12px;
+}
+
+.tambah-data button {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    font-size: 24px;
+    margin-bottom: 12px;
+    background-color: #600e00;
+    color: #fff;
+    border-radius: 16px;
+    border: none;
+    margin-left: 32px;
+    top: 8px;
+    right: 12px;
+}
+
+.tambah-data h5 {
+    margin: 12px;
+    color: #000;
+    font-weight: 700;
 }

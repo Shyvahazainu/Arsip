@@ -28,15 +28,8 @@ class LoginController extends Controller
         if (Auth::attempt($data)) {
             // Check user level after successful login
             $user = Auth::user();
-
-            if ($user->level == 'Admin') {
-                return redirect('admin');
-            } elseif ($user->level == 'User') {
-                return redirect('user');
-            } else {
                 // Handle other levels as needed
                 return $this->redirectHome();
-            }
         } else {
             Session::flash('error', 'NIP atau Password Salah');
             return redirect('/');
@@ -47,16 +40,8 @@ class LoginController extends Controller
     {
         // Get the authenticated user
         $user = Auth::user();
-
-        // Check user level and redirect accordingly
-        if ($user->level == 'Admin') {
-            return redirect('admin');
-        } elseif ($user->level == 'User') {
-            return redirect('user');
-        } else {
             // Handle other levels as needed
             return redirect('home');
-        }
     }
 
     public function actionlogout()

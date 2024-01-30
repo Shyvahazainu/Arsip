@@ -1,4 +1,31 @@
 /* styles.css */
-body {
+
+.beranda {
+    min-height: 100%;
+    top: 48px;
+}
+
+.identitas {
+    padding: 24px;
+    margin-left: 212px;
+    color: #600e00;
+}
+
+.line-1 {
     display: flex;
+}
+
+.line-1 img {
+    width: 42px;
+    height: 42px;
+}
+
+.line-1 h4 {
+    margin-left: 12px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.identitas p:first-child {
+    position: relative;
 }

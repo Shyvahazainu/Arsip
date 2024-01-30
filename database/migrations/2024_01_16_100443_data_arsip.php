@@ -12,6 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('data_arsip', function (Blueprint $table) {
+            $table->char('gender');
+
         });
     }
 
