@@ -11,19 +11,13 @@ header {
     padding-left: 12px; /* Center children horizontally */
     background: url("../img/bg-login.png");
     width: 196px;
-    height: fit-content;
+    min-height: 100vh;
     font-weight: 700;
     border-radius: 0 0 16px 0;
 }
-
 /* nav.css */
 .nav-hidden {
     display: none;
-}
-
-ul li {
-    list-style: none;
-    margin-top: 24px;
 }
 
 ul li a img {
@@ -39,29 +33,49 @@ a {
     flex-direction: column;
     align-items: center;
 }
+.kiri {
+    color: rgb(255, 255, 255);
+    width: 188px;
+}
 
 ul {
     list-style: none;
     padding: 0;
-    margin-bottom: 36px; /* Remove default padding */
 }
 
-ul li a {
-    margin-left: 4px;
+.kiri li a {
+    height: 18px;
+    margin-left: 24px;
     text-decoration: none;
     color: rgb(255, 255, 255);
     /* Remove underline from links */
 }
 
-ul li a:hover {
+.kiri li {
+    padding-top: 6px;
+    list-style: none;
+    margin-top: 12px;
+    height: 32px;
+    transition: 0.3s;
+    justify-content: center;
+}
+
+.kiri li:hover {
+    background-color: #600e00;
     color: #fff;
-    opacity: 0.8;
     text-decoration: none;
 }
 
-ul li a.active {
+.kiri li a:hover {
     color: #fff;
-    opacity: 0.8;
+    text-decoration: none;
+}
+
+.kiri li.active {
+    /* background-position-y: top; */
+    height: 32px;
+    background-color: #600e00;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -89,7 +103,7 @@ ul li a.active {
     margin-bottom: 12px;
 }
 
-.tambah-data button {
+.tambah-data a {
     position: absolute;
     width: 42px;
     height: 42px;
@@ -102,6 +116,14 @@ ul li a.active {
     margin-left: 32px;
     top: 8px;
     right: 12px;
+    text-align: center;
+    padding-top: 4px;
+    text-decoration: none;
+}
+
+.tambah-data a:hover {
+    text-decoration: none;
+    background-color: #600e00d8;
 }
 
 .tambah-data h5 {

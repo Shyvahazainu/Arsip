@@ -24,6 +24,9 @@ Route::get('home', [HomeController::class, 'index'])->name('home')->middleware('
 Route::get('actionlogout', [LoginController::class, 'actionlogout'])->name('actionlogout')->middleware('auth');
 
 
-Route::get('/penyidikan', [DataController::class, 'showDataPenyidikan'])->name('show.data.penyidikan');
+Route::get('/penyidikan', [DataController::class, 'showDataPenyidikan'])->name('penyidikan');
 
-Route::get('/penuntutan', [DataController::class, 'showDataPenuntutan'])->name('show.data.penuntutan');
+Route::get('/penuntutan', [DataController::class, 'showDataPenuntutan'])->name('penuntutan');
+
+Route::get('upload', [DataController::class, 'upload'])->name('upload');
+Route::post('uploading', [DataController::class, 'uploading'])->name('uploading');

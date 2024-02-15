@@ -1,31 +1,210 @@
 /* styles.css */
 
 .beranda {
+    margin-left: 242px;
+    margin-bottom: 48px;
+    padding-top: 36px;
     min-height: 100%;
     top: 48px;
 }
-
-.identitas {
-    padding: 24px;
-    margin-left: 212px;
-    color: #600e00;
+.user {
+    width: 96%;
+    position: relative;
+    color: #fff;
+    /* margin-top: 4px; */
+    margin-bottom: 24px;
+    background: url("../img/bg-login2.jpg") no-repeat;
+    background-size: 96%;
+    padding: 8px 24px 20px 24px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-.line-1 {
-    display: flex;
-}
-
-.line-1 img {
-    width: 42px;
-    height: 42px;
-}
-
-.line-1 h4 {
+.profil {
+    margin-top: 4px;
     margin-left: 12px;
-    font-size: 24px;
+    color: #600e00;
+    background-color: #fff;
+    outline: none;
+    appearance: none;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
+        rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+    box-sizing: border-box;
+    color: #600e00;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+        sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    padding: 6px 16px;
+    position: relative;
+    transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    word-wrap: break-word;
+}
+.profil:hover {
+    background-color: #f3f4f6;
+    text-decoration: none;
+    transition-duration: 0.1s;
+}
+
+.profil:disabled {
+    background-color: #fafbfc;
+    border-color: rgba(27, 31, 35, 0.15);
+    color: #959da5;
+    cursor: default;
+}
+
+.profil:active {
+    background-color: #edeff2;
+    box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+    transition: none 0s;
+}
+
+.profil:focus {
+    outline: 1px transparent;
+}
+
+.profil:before {
+    display: none;
+}
+
+.profil:-webkit-details-marker {
+    display: none;
+}
+
+.gambar-profil img {
+    /* top: -10px; */
+    top: 2px;
+    right: 12%;
+    position: absolute;
+    width: 216px;
+    margin-bottom: 8px;
+    z-index: 1;
+}
+
+.user h2 {
+    /* margin-top: 5px; */
+    margin-top: 8px;
+    margin-left: 12px;
+    font-size: 32px;
     font-weight: 700;
 }
 
-.identitas p:first-child {
+.user p {
+    margin-left: 12px;
+    font-weight: 300;
+}
+
+.identitas {
+    font-size: 16px;
     position: relative;
+    display: flex;
+    width: 96%;
+    justify-content: space-between;
+    /* padding: 24px; */
+    color: #600e00;
+    color: #fff;
+}
+
+.identitas img {
+    border-radius: 24px;
+    padding: 4px;
+    margin: 4px 12px 4px 8px;
+    width: 36px;
+    height: 36px;
+    background-color: #fff;
+}
+
+.identitas div {
+    /* color: #fff; */
+    margin-bottom: 16px;
+    color: #600e00;
+    width: fit-content;
+    border-radius: 16px;
+    padding: 10px 24px 4px 4px;
+    position: relative;
+    display: flex;
+    /* background: url("../img/bg-login3.jpg"); */
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.identitas span {
+    font-weight: 600;
+}
+
+.identitas h1 {
+    color: #600e00;
+}
+
+.bawah {
+    display: flex;
+    width: 96%;
+    justify-content: space-between;
+}
+
+.top-5 {
+    position: relative;
+    display: flex;
+}
+
+.top-5 div {
+    color: #fff;
+    background-color: #600e00;
+    min-width: 36px;
+    height: 36px;
+    text-align: center;
+    /* padding: 12px; */
+    padding-top: 8px;
+    border-radius: 50%;
+}
+
+.top-5 h5 {
+    margin-left: 8px;
+    margin-top: 4px;
+}
+
+.top-5 h5 span:first-child {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+input.search {
+    outline: none;
+    border: none;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    width: 50%;
+    height: fit-content;
+    display: block;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 9px 4px 9px 40px;
+    background: transparent url("../img/search.png") no-repeat 12px;
+    background-color: #fff;
+}
+
+.new-5 {
+    width: 56%;
+}
+
+.date {
+}
+
+.ttl-perkara {
+}
+
+.ttl-arsip {
+}
+
+.ttl-locus {
 }
