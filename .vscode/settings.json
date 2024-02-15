@@ -1,0 +1,7 @@
+{
+    "blade.format.enable": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[blade]": {
+        "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+    }
+}
