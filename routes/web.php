@@ -17,6 +17,7 @@ use App\Http\Controllers\DataController;
 */
 
 // Change the route definition for displaying the login form
+Route::view('/profil', 'home.profil')->name('profil');
 Route::get('/', [LoginController::class, 'login'])->name('login');
 Route::post('actionlogin', [LoginController::class, 'actionlogin'])->name('actionlogin');
 

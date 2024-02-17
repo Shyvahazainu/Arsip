@@ -64,6 +64,7 @@ ul {
     background-color: #600e00;
     color: #fff;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .kiri li a:hover {
