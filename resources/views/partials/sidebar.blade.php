@@ -16,21 +16,32 @@
                 </li>
             </div>
             <ul class="kiri">
-                <li class=" {{ Route::is('home') ? 'active' : '' }}"><a href="{{ url('home') }}"><img
-                            src="../img/dashboard.png" alt="">Dashboard</a></li>
-                <li class=" {{ Route::is('penyidikan') ? 'active' : '' }}"><a href=" {{ url('penyidikan') }}"><img
-                            src="../img/penyidikan.png" alt="">Penyidikan</a>
-                </li>
-                <li class=" {{ Route::is('penuntutan') ? 'active' : '' }}"><a href="{{ url('penuntutan') }}"><img
-                            src="../img/penuntutan.png" alt="">Penuntutan</a>
-                </li>
-                <li class=" {{ Route::is('ee') ? 'active' : '' }}"><a href="{{ url('ee') }}"><img
-                            src="../img/ee.png" alt="">EE</a></li>
-                <li class=" {{ Route::is('kontak') ? 'active' : '' }}"><a href="{{ url('kontak') }}"><img
-                            src="../img/call.png" alt="">Kontak</a></li>
-                <li class=" {{ Route::is(route('actionlogout')) ? 'active' : '' }}"><a
-                        href="{{ route('actionlogout') }}"><img src="../img/logout.png" alt="">Log Out</a>
-                </li>
+                <a href="{{ url('home') }}">
+                    <li class=" {{ Route::is('home') ? 'active' : '' }}"><img src="../img/dashboard.png"
+                            alt="">Beranda</li>
+                </a>
+                <a href=" {{ url('penyidikan') }}">
+                    <li class=" {{ Route::is('penyidikan') ? 'active' : '' }}"><img src="../img/penyidikan.png"
+                            alt="">Penyidikan
+                    </li>
+                </a>
+                <a href="{{ url('penuntutan') }}">
+                    <li class=" {{ Route::is('penuntutan') ? 'active' : '' }}"><img src="../img/penuntutan.png"
+                            alt="">Penuntutan
+                    </li>
+                </a>
+                <a href="{{ url('ee') }}">
+                    <li class=" {{ Route::is('ee') ? 'active' : '' }}"><img src="../img/ee.png" alt="">EE</li>
+                </a>
+                <a href="{{ url('kontak') }}">
+                    <li class=" {{ Route::is('kontak') ? 'active' : '' }}"><img src="../img/call.png"
+                            alt="">Kontak</li>
+                </a>
+                <a href="{{ route('actionlogout') }}">
+                    <li class=" {{ Route::is(route('actionlogout')) ? 'active' : '' }}"><img src="../img/logout.png"
+                            alt="">Keluar
+                    </li>
+                </a>
             </ul>
 
         </div>

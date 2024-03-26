@@ -168,14 +168,17 @@
     border-radius: 50%;
 }
 
-.top-5 h5 {
+.top-5 p {
     margin-left: 8px;
-    margin-top: 4px;
 }
 
-.top-5 h5 span:first-child {
-    font-weight: 600;
-    font-size: 16px;
+.top-5 p span:first-child {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.tgl-top-5 {
+    font-size: 12px;
 }
 
 input.search {
@@ -194,7 +197,16 @@ input.search {
 }
 
 .new-5 {
-    width: 56%;
+    margin-top: 16px;
+    width: 50%;
+}
+
+.berita {
+}
+
+.berita iframe {
+    margin: -12%;
+    background-color: #fff;
 }
 
 .date {
