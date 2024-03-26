@@ -22,6 +22,7 @@ Route::get('/', [LoginController::class, 'login'])->name('login');
 Route::post('actionlogin', [LoginController::class, 'actionlogin'])->name('actionlogin');
 
 Route::get('home', [HomeController::class, 'index'])->name('home')->middleware('auth');
+Route::get('/home/cari', [HomeController::class, 'cari'])->name('cariHome');
 Route::get('actionlogout', [LoginController::class, 'actionlogout'])->name('actionlogout')->middleware('auth');
 
 

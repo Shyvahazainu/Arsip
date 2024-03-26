@@ -46,7 +46,9 @@
                     <tr>
                         <td>{{ $arsip->id }}</td>
                         <td>{{ $arsip->bidang }}</td>
-                        <td>{{ $arsip->dok }}</td>
+                        <td>
+                            <a href="{{ $arsip->file }}">{{ $arsip->dok }}</a>
+                        </td>
                         <td>{{ $arsip->jenis_pidana }}</td>
                         <td>{{ $arsip->perkara }}</td>
                         <td>{{ $arsip->locus }}</td>

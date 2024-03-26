@@ -33,7 +33,7 @@
             {{-- <h1>|</h1> --}}
             <div class="ttl-perkara">
                 <img src="../img/case.png" alt="" srcset="">
-                <p><span>Total perkara</span> <br>{{ $total_cases }} Kasus</p>
+                <p><span>Total perkara</span> <br>{{ $total_perkara }} Kasus</p>
             </div>
             {{-- <h1>|</h1> --}}
 
@@ -47,7 +47,11 @@
                 <p><span>Total Locus</span> <br>{{ $total_locus }} Lokasi</p>
             </div>
         </div>
-        <input class="search" type="search" placeholder="Search...">
+        <form action="/home/cari" method="get">
+            <input class="search" type="search" placeholder="Cari Arsip..." name="cari">
+            <input type="submit" value="CARI">
+
+        </form>
 
         <div class="bawah">
             <div class="new-5">
@@ -55,17 +59,20 @@
                 @foreach ($dataArsip->take(5) as $arsip)
                     <ol class="top-5">
                         <div>{{ $counter }}</div>
-                        <h5> <span>{{ $arsip->dok }}</span> <br>
-                            <span>Tangal ditambahkan : {{ $arsip->created_at }}</span>
-                        </h5>
+                        <p> <span>{{ $arsip->dok }}</span> <br>
+                            <span class="tgl-top-5">Tanggal ditambahkan : {{ $arsip->created_at }}</span>
+                        </p>
                     </ol>
                     @php
                         $counter++;
                     @endphp
                 @endforeach
             </div>
+            <div class="berita">
+                <iframe src="https://aceh.antaranews.com/" width="100%" height="420px" frameborder="0" scrolling="yes">
+                </iframe>
 
-
+            </div>
         </div>
     </div>
 @endsection

@@ -47,6 +47,37 @@ footer {
     font-weight: 100;
     font-size: 14px;
 }
+
+.socmed {
+    margin-top: 16px;
+    display: table-column;
+    position: relative;
+    left: 48%;
+    top: 24px;
+}
+
+.socmed a {
+    text-decoration: none;
+}
+
+.socmed a:hover {
+    text-decoration: none;
+}
+
+.socmed i {
+    color: white;
+    font-size: 24px;
+    display: flex;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.socmed i:hover {
+    color: #b4b4b4;
+    padding: 0;
+    border-radius: 50%;
+}
+
 /* footer {
     top: 100%;
     background: #600e00;

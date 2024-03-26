@@ -1,19 +1,30 @@
 <link rel="stylesheet" href="../css/upload.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 @extends('beranda')
 @section('konten')
     <div class="up-load">
         <div class="form-up">
 
-            <form action="{{ route('uploading') }}" method="post" enctype="multipart/form-data">
+            <form action="{{ route('uploading') }}" method="post" enctype="multipart/form-data" class="upload-file">
                 @csrf <!-- Add CSRF token for security -->
 
+                <div class="upl-file">
+                    <label for="file" class="form-label">Choose a file</label>
+                    <div class="file-input-container">
+                        <input class="form-control" type="file" id="file" name="file"
+                            onchange="updateLabel(this)">
+                        <label class="file-input-label" for="file"><i class="fas fa-upload"></i> <span
+                                id="file-name">Browse</span></label>
+                    </div>
+                </div>
                 <label for="nama">Nama Pengupload</label><br>
                 <input class="nama-up" type="text" placeholder="{{ Auth::user()->name }}"
-                    aria-label="Disabled input example" disabled> <br>
+                    aria-label="Disabled input example" disabled>
 
-                <label for="dok">Judul Dokumen</label>
+                <label for="dok">Judul Dokumen</label> <br>
 
-                <textarea name="dokumen" id="dok" style="height: 200px; width: 1100px;" onclick="this.value=''">Enter text here...</textarea>
+                <textarea name="dokumen" id="dok" style="height: 72px; width: 520px;" onclick="this.value=''">Enter text here...</textarea> <br>
 
 
                 <label for="bidang">Bidang</label>
@@ -39,10 +50,7 @@
                     @endforeach
                 </select>
 
-                <div class="mb-3">
-                    <label for="file" class="form-label">File Upload</label>
-                    <input class="form-control" type="file" id="file" name="file">
-                </div>
+
 
                 <label for="jenis_file">Jenis File</label>
                 <input type="text" id="jenis_file" name="jenis_file">
@@ -53,3 +61,5 @@
 
     </div>
 @endsection
+
+<script src="../js/upload.js"></script>
